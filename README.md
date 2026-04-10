@@ -1,9 +1,9 @@
 # USASCII 
 
 🇺🇸 🗺️ -> 🔢  
-An ASCII visualization of U.S. land cover maps over time.
+An ASCII visualization of land cover in the contiguous U.S. over time.
 
-[gif of output will go here]
+![](src/usascii.gif)
 
 ### Setup
 
@@ -26,12 +26,26 @@ conda activate nlcd
 python USASCII_Script.py
 ```
 
-Outputs one PNG and one GeoPackage per year to `data/nlcd_out/`.
+Outputs one PNG per year to `data/nlcd_out/`.
 
 ### How it works
 
 1. Reads each annual NLCD raster
-2. Downsamples 30m → 30km via nearest-neighbor
+2. Downsamples 30m → 30km via most common land use
 3. Extracts centroids for each downsampled pixel
 4. Clips to CONUS boundary
 5. Plots each land cover class as an ASCII character
+
+## Land cover legend
+
+| Class | Char |
+|---|---|
+| Open Water | `~` |
+| Developed (Open → High) | `.` `▫` `◻` `⊡` |
+| Barren | ` ` |
+| Deciduous / Evergreen / Mixed Forest | `+` `^` `×` |
+| Shrub/Scrub | `·` |
+| Grassland | `,` |
+| Pasture/Hay | `-` |
+| Cultivated Crops | `=` |
+| Woody / Herbaceous Wetlands | `w` `v` |
