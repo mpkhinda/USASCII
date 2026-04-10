@@ -1,0 +1,12 @@
+name: nlcd
+channels:
+  - defaults
+dependencies:
+  - shapely
+  - python=3.11
+  - rasterio
+  - tqdm
+  - scipy
+  - geopandas
+  - matplotlib
+prefix: /opt/anaconda3/envs/nlcd

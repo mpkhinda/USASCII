@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Other
+.venv/
+*.pyc
+.DS_Store
+nlcd_rasters/
+nlcd_out/
+us_boundary/
