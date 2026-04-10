@@ -41,7 +41,7 @@ Outputs one PNG per year to `data/nlcd_out/`.
 | Class | Char |
 |---|---|
 | Open Water | `~` |
-| Developed (Open → High) | `.` `▫` `◻` `⊡` |
+| Developed (Low → High) | `.` `▫` `◻` `⊡` |
 | Barren | ` ` |
 | Deciduous / Evergreen / Mixed Forest | `+` `^` `×` |
 | Shrub/Scrub | `·` |
